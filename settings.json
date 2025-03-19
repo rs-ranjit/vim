@@ -1,0 +1,255 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript"
+  ],
+  "database-client.autoSync": true,
+  "redhat.telemetry.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  // ====================
+  // Vim Custom Settings
+  // ====================
+  "vim.useSystemClipboard": true, // Use system clipboard for copy-paste
+  "vim.leader": " ", // Set space as the leader key
+  "vim.insertModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [
+    // Custom keybinding in normal mode
+    //Nice to haves
+    {
+      "before": [
+        "leader",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "p"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "h"
+      ],
+      "commands": [
+        "editor.action.showDefinitionPreviewHover"
+      ]
+    },
+    {
+      "before": [
+        "[",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.prev"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "d"
+      ],
+      "commands": [
+        "editor.action.marker.next"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        ":w!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "x"
+      ],
+      "commands": [
+        ":x!"
+      ]
+    },
+    // splits
+    {
+      "before": [
+        "leader",
+        "v"
+      ],
+      "commands": [
+        ":vsplit"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "x"
+      ],
+      "commands": [
+        ":split"
+      ]
+    },
+    //For Panes
+    {
+      "before": [
+        "<Leader>",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.focusDownGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.focusUpGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "H"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "J"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToDownGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "K"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToUpGroup"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "L"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToRightGroup"
+      ]
+    },
+    //Select all
+    {
+      "before": [
+        "<C-a>"
+      ],
+      "commands": [
+        "editor.action.selectAll"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    // Move selected lines while staying in visual mode
+    {
+      "before": [
+        "J"
+      ],
+      "commands": [
+        "editor.action.moveLinesDownAction"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "editor.action.moveLinesUpAction"
+      ]
+    },
+    // toggle comment selection
+    {
+      "before": [
+        "leader",
+        "c"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    }
+  ],
+  "vim.surround": true, // Enable Surround functionality
+  "vim.hlsearch": true, // Highlight search matches
+  "vim.incsearch": true, // Incremental search
+  "vim.useCtrlKeys": true, // Enable Ctrl-based navigation
+  "vim.cursorStylePerMode": {
+    // Different cursor styles per mode
+    "normal": "block",
+    "insert": "line",
+    "visual": "underline"
+  },
+  "window.menuBarVisibility": "toggle",
+  "workbench.activityBar.location": "hidden"
+}

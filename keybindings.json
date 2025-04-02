@@ -19,17 +19,23 @@
   },
   //Terminal
   {
-    "key": "ctrl+enter", // You can customize this keybinding
-    "command": "workbench.action.terminal.focus"
+    "key": "ctrl+enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus || panelFocus"
   },
   {
-    "key": "ctrl+shift+a",
-    "command": "workbench.action.terminal.focusNext",
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus || panelFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus"
   },
   {
-    "key": "shift+b",
-    "command": "workbench.action.terminal.focusPrevious",
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.focusNextPane",
     "when": "terminalFocus"
   },
   {
@@ -37,9 +43,13 @@
     "command": "workbench.action.togglePanel"
   },
   {
-    "key": "ctrl+shift+n",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+shift+w",
@@ -53,7 +63,7 @@
   },
   {
     "command": "workbench.files.action.focusFilesExplorer",
-    "key": "ctrl+b",
+    "key": "ctrl+e",
     "when": "editorTextFocus || !editorTextFocus"
   },
   // For CTRL+d
@@ -99,3 +109,4 @@
     "command": "workbench.action.toggleZenMode"
   }
 ]
+
